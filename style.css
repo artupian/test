@@ -1,0 +1,74 @@
+/* external css: flickity.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+body {
+}
+.carousel {
+  background: #;
+  height: 100%;
+  width:100% ;
+  padding: 20px;
+}
+.carousel-cell {
+  width: calc(100% / 2 - 30px);
+  height: auto;
+  background: #fff;
+  border-radius: 22px;
+  padding: 36px;
+  margin: 16px;
+  box-shadow: 0 0px 7px rgba(0, 0, 0, 0.15);
+  transition: all 0.4s ease;
+  align-items: center;
+  text-align: center;
+}
+.carousel-cell:hover{
+  box-shadow: 0 0px 8px #FFDE3D;
+}
+
+.carousel-cell.is-selected {
+  background: #fff;
+}
+.flickity-viewport {
+  transition: height 0.2s;
+}
+.flickity-page-dots .dot {
+  height: 15px;
+  width: 15px;
+  border-radius: 30px;
+  transition: all 0.5s ease;
+}
+.flickity-page-dots .dot.is-selected{
+  width: 30px;
+}
+.details .quotes{
+  font-size: 20px;
+  margin-bottom:16px;
+}
+.details .name{
+  font-size: 20px;
+  color: #DE3078;
+  font-weight: bold;
+}
+.details .job{
+  font-size: 16px;
+  color: #DE3078;
+  margin-bottom: 10px;
+}
+.details .rating i{
+  font-size: 20px;
+  color: #FFDE3D;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+@media (max-width: 700px) {
+  .carousel-cell {
+    width: calc(100% - 20px);
+  }
+}
